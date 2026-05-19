@@ -56,7 +56,6 @@ body {
 .sec {
     display: flex;
     justify-content: center;
-    align-items: center;
     position: absolute;
     border-radius: 50%;
 }
@@ -65,7 +64,46 @@ body {
 /* Before */
 .hr::before, 
 .min::before,
-.sec::before {
+.sec::before,
+.analog-clock::before {
     content: "";
     position: absolute;
+}
+
+.hr::before,
+.min::before,
+.sec::before {
+    border-radius: 6px 6px 0 0;
+}
+
+.hr::before {
+    z-index: 1;
+    background: #848484;
+    width: 8px;
+    height: 80px;
+}
+
+.min::before {
+    z-index: 2;
+    background: #d6d6d6;
+    width: 4px;
+    height: 90px;
+}
+
+.sec::before {
+    z-index: 3;
+    background: #ff6767;
+    width: 2px;
+    height: 150px;
+}
+
+
+/* Center point */
+.analog-clock::before {
+    z-index: 9;
+    background: #848484;
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
 }
