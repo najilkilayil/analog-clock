@@ -15,7 +15,8 @@ body {
 .analog-clock {
     width: 360px;
     height: 360px;
-    background-color: white;
+    background: url(clock.png);
+    background-size: cover;
     border-radius: 50%;
     display: flex;
     align-items: center;
