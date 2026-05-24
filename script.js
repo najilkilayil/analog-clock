@@ -22,4 +22,24 @@ setInterval(() => {
     hr.style.transform = `rotate(${hh+(mm/12)}deg)`;
     min.style.transform = `rotate(${mm}deg)`;
     sec.style.transform = `rotate(${ss}deg)`;
+
+    // Digital Clock
+    
+    // const digiTime = document.getElementById("digi-clock-time");
+    // digiTime.innerText = `${hr}:${min}:${sec}`;
+    // THESE LINES SHOWS THE ANGLE FAILED TRIED
+    // SO I DECIDED TO REWRITE THE CODE AGAIN AS BASED ON NASA API DOCS
+
+    let hour = day.getHours();
+    let minu = day.getMinutes();
+    let seconds = day.getSeconds();
+
+    const digi = document.getElementById("digi-clock-time");
+
+    digi.innerText = `${hour}:${minu}:${seconds}`;
+
+
+    // Now its perfect
+    let date = day.getDate();
+
 });
