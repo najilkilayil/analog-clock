@@ -13,6 +13,13 @@ The clock updates in real time and includes smooth rotaing hour, minute and seco
 - Dark modern UI
 - CSS box-shadow effects
 
+---
+
+## 🚀 Updated Features
+- Real-time working digital clock
+- Text with animation
+- Digital clock with hover animation
+
 ----
 
 ## 🛠 Technologies Used
@@ -53,11 +60,11 @@ sec.style.transform = `rotate(${ss}deg)`;
 
 ----
 
-## 🎨 UI Design
-- Dark futuristic background
-- Circular analog design
-- Multiple shadows for realistic depth
-- Center pin design using *::before*
+## 🎨 Future Plans
+- Real-time weather data
+- Dark/Light theme option
+- Search and find real-time data of an location
+- Adavnced animations
 
 ---
 
